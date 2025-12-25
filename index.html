@@ -42,9 +42,9 @@
         /* Camera Preview Vandiep */
         #camera-preview {
             position: absolute; top: 15px; right: 15px;
-            width: 320px; height: 240px;
+            width: 120px; height: 90px;
             border: 2px solid rgba(255,0,0,0.5); 
-            transform: scaleX(-1); opacity: 0.8; border-radius: 8px;
+            transform: scaleX(-1); opacity: 0.6; border-radius: 8px;
         }
         
         /* Noel 2025 cua Tuan */
@@ -76,7 +76,7 @@
     </div>
 
     <!-- Vandiep -->
-    <div id="copyright">© by vandiep</div>
+    <div id="copyright">© Nan gui Tuan iu </div>
 
     <div id="canvas-container"></div>
     <video class="input_video" style="display:none"></video>
@@ -283,14 +283,14 @@
         }
 
         function createDecorations() {
-            // MERRY CHRISTMAS Vandiep
+            // MERRY CHRISTMAS 2025 Vandiep
             const canvas = document.createElement('canvas');
             canvas.width = 1024; canvas.height = 256;
             const ctx = canvas.getContext('2d');
             ctx.font = 'bold italic 90px "Times New Roman"';
             ctx.fillStyle = '#FFD700'; ctx.textAlign = 'center';
             ctx.shadowColor = "#FF0000"; ctx.shadowBlur = 40; 
-            ctx.fillText("MERRY CHRISTMAS", 512, 130);
+            ctx.fillText("MERRY CHRISTMAS 2025", 512, 130);
             const tex = new THREE.CanvasTexture(canvas);
             const mat = new THREE.MeshBasicMaterial({ map: tex, transparent: true, blending: THREE.AdditiveBlending });
             titleMesh = new THREE.Mesh(new THREE.PlaneGeometry(60, 15), mat);
